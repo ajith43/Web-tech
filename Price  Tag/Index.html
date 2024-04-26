@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-image: url(./images/bg\ color.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #left{
+            width: 300px;
+            height: 500px;
+            margin-left: 200px;
+            margin-top: 0px;
+            padding-bottom: 200px;
+            border-radius: 10px;
+        }
+        #left-top{
+            background-color: whitesmoke;
+            height: 60px;
+            padding-left: 90px;
+            padding-top: 40px;
+            padding-bottom: 90px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        #left-bottom{
+            height: 110px;
+            padding-left: 90px;
+            padding-top: 90px;
+            padding-bottom: 70px;
+            background-color: rgba(224, 146, 98, 0.632);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        #right{
+            width: 300px;
+            height: 500px;
+            margin-left: 85px;
+            margin-top: 100px;
+            border-radius: 10px;
+        }
+        #right-top{
+            background-color: whitesmoke;
+            height: 60px;
+            padding-left: 90px;
+            padding-top: 40px;
+            padding-bottom: 90px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        #right-bottom{
+            height: 110px;
+            padding-left: 90px;
+            padding-top: 90px;
+            padding-bottom: 70px;
+            background-color: rgba(225, 16, 141, 0.632);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .left-right{
+            display: inline-block;
+            padding-left: 190px;
+            padding-top: 70px;
+        }
+        #middle{
+            width: 300px;
+            height: 500px;
+            margin-left: 200px;
+            margin-top: 110px;
+            border-radius: 10px;
+            position: absolute;
+            left: 480px;
+            top: 40px;
+            bottom: 5000px;
+        }
+        #middle-top{
+            background-color: white;
+            height: 70px;
+            padding-left: 90px;
+            padding-top: 30px;
+            padding-bottom: 110px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        #middle-bottom{
+            height: 130px;
+            padding-left: 90px;
+            padding-top: 90px;
+            padding-bottom: 70px;
+            background-color: rgb(139, 0, 139);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .b-content{
+            color: white;
+        }
+        .l-r-h1{
+            position: absolute;
+            top: 380px;
+        }
+        #r-h1{
+            left: 1030px;
+        }
+        #m-h1{
+            position: absolute;
+            top: 230px;
+            left: 65px;
+        }
+        #l-b-p{
+            position: absolute;
+            left: 460px;
+        }
+        #r-b-p{
+            position: absolute;
+            left: 1030px;
+        }
+        #m-b-p{
+            left: 10px;
+        }
+        #l-button{
+            position: absolute;
+            top: 590px;
+            width: 90px;
+            height: 25px;
+            border-radius: 15px;
+            color: rgba(224, 146, 98, 0.632);
+            border-color: rgba(224, 146, 98, 0.632);
+        }
+        #r-button{
+            position: absolute;
+            top: 590px;
+            width: 90px;
+            height: 25px;
+            border-radius: 15px;
+            color: rgba(225, 16, 141, 0.632);
+            border-color: rgba(225, 16, 141, 0.632);
+        }
+        #m-button{
+            width: 90px;
+            height: 25px;
+            border-radius: 15px;
+            color: darkmagenta;
+            border-color: darkmagenta;
+        }
+        #l-h2{
+            position: absolute;
+            color: rgba(224, 146, 98, 0.632);
+            font-size: 60px;
+            left: 470px;
+            top: 230px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #r-h2{
+            position: absolute;
+            color: rgba(225, 16, 141, 0.632);
+            font-size: 60px;
+            left: 1060px;
+            top: 230px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #m-h2{
+            position: absolute;
+            color: darkmagenta;
+            font-size: 60px;
+            top: 70px;
+            left: 100px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #l-p{
+            position: absolute;
+            top: 300px;
+        }
+        #r-p{
+            position: absolute;
+            top: 300px;
+            left: 1070px;
+        }
+        #m-p{
+            position: absolute;
+            top: 140px;
+            left: 110px;
+        }
+        #l-check1{
+            position: absolute;
+            left: 440px;
+        }
+        #l-check2{
+            position: absolute;
+            left: 440px;
+        }
+        #l-check3{
+            position: absolute;
+            left: 440px;
+        }
+        #l-xmark{
+            position: absolute;
+            left: 440px;
+        }
+        #r-check1{
+            position: absolute;
+            left: 1010px;
+        }
+        #r-check2{
+            position: absolute;
+            left: 1010px;
+        }
+        #r-check3{
+            position: absolute;
+            left: 1010px;
+        }
+        #r-check4{
+            position: absolute;
+            left: 1010px;
+        }
+        #m-check1{
+            position: absolute;
+            left: 70px;
+        }
+        #m-check2{
+            position: absolute;
+            left: 70px;
+        }
+        #m-check3{
+            position: absolute;
+            left: 70px;
+        }
+        #m-check4{
+            position: absolute;
+            left: 70px  ;
+        }
+    </style>
+</head>
+<body>
+    <div id="left" class="left-right">
+        <div id="left-top">
+            <div>
+                <h2 id="l-h2">$26</h2>
+                <p id="l-p">per month</p>
+            </div>
+        </div>
+        <div id="left-bottom">
+            <div id="l-b-content" class="b-content">
+                <h1 class="l-r-h1">BASIC</h1>
+                <i class="fa-solid fa-check" id="l-check1" style="color: #ffffff;"></i>
+                <p id="l-b-p">Data 100GB</p><br><br>
+                <i class="fa-solid fa-check" id="l-check2" style="color: #ffffff;"></i>
+                <p id="l-b-p">Speed upto 40Mbps</p><br><br>
+                <i class="fa-solid fa-check" id="l-check3" style="color: #ffffff;"></i>
+                <p id="l-b-p">Calls 100 calls Local/STD</p><br><br>
+                <i class="fa-solid fa-xmark" id="l-xmark" style="color: #ffffff;"></i>
+                <p id="l-b-p">AmazonPrime 1 year</p><br>
+                <input type="button" value="CHOOSE" id="l-button">
+            </div>
+        </div>
+    </div>
+    <div id="right" class="left-right">
+        <div id="right-top">
+            <div>
+                <h2 id="r-h2">$35</h2>
+                <p id="r-p">per month</p>
+            </div>
+        </div>
+        <div id="right-bottom">
+            <div id="r-b-content" class="b-content">
+                <h1 class="l-r-h1" id="r-h1">ULTIMATE</h1>
+                <i class="fa-solid fa-check" id="r-check1" style="color: #ffffff;"></i>
+                <p id="r-b-p">Data Unlimited</p><br><br>
+                <i class="fa-solid fa-check" id="r-check2" style="color: #ffffff;"></i>
+                <p id="r-b-p">Speed upto 100Mbps</p><br><br>
+                <i class="fa-solid fa-check" id="r-check3" style="color: #ffffff;"></i>
+                <p id="r-b-p">Calls Unlimited Local/STD</p><br><br>
+                <i class="fa-solid fa-check" id="r-check4" style="color: #ffffff;"></i>
+                <p id="r-b-p">AmazonPrime and Netflix 1year</p><br>
+                <input type="button" value="CHOOSE" id="r-button">
+            </div>
+        </div>
+    </div>
+    <div id="middle">
+        <div id="middle-top">
+            <div>
+                <h2 id="m-h2">$30</h2>
+                <p id="m-p">per month</p>
+            </div>
+        </div>
+        <div id="middle-bottom">
+            <div id="m-b-content" class="b-content">
+                <h1 id="m-h1">PREMIUM</h1>
+                <i class="fa-solid fa-check" id="m-check1" style="color: #ffffff;"></i>
+                <p id="m-b-p">Data 500GB</p><br>
+                <i class="fa-solid fa-check" id="m-check2" style="color: #ffffff;"></i>
+                <p id="m-b-p">Speed upto 1 Gbps</p><br>
+                <i class="fa-solid fa-check" id="m-check3" style="color: #ffffff;"></i>
+                <p id="m-b-p">Calls Unlimited Local/STD</p><br>
+                <i class="fa-solid fa-check" id="m-check4" style="color: #ffffff;"></i>
+                <p id="m-b-p">AmazonPrime 1year</p><br>
+                <input type="button" value="CHOOSE" id="m-button">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
